@@ -1,0 +1,380 @@
+* {
+    /* font-family: 'DM Sans', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    /* #########Theme Site Demon######## */    
+    --theme-red1: #FF963C;
+    --theme-red1-rgb: 255, 52, 63;
+    --theme-red2: #A017D7;
+    --theme-red3: #800015;
+    --theme-green1: #C1CDAD;
+    --theme-green2: #D1B857;
+    --theme-green3: #9BD1CC;
+    --theme-blue1: #6FAAFF;
+
+    --theme-combine1: #A017D7;
+    --theme-combine2: #FF963C;
+
+    --theme-black1: #212428;
+    --theme-black1-rgb: 33, 36, 40;
+    --theme-black2: #212529;
+    --theme-white1: #FFFBF2;
+    --theme-white2: #DFE2DB;
+    --theme-brown1: #56423E;
+    --theme-brown2: #3C3A44;
+}
+
+:root {
+    --toastify-color-light: #fff;
+    --toastify-color-dark: #121212;
+    --toastify-color-info: #3498db;
+    --toastify-color-success: #07bc0c;
+    --toastify-color-warning: #f1c40f;
+    --toastify-color-error: #e74c3c;
+    --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+  
+    --toastify-icon-color-info: var(--toastify-color-info);
+    --toastify-icon-color-success: var(--toastify-color-success);
+    --toastify-icon-color-warning: var(--toastify-color-warning);
+    --toastify-icon-color-error: var(--toastify-color-error);
+  
+    --toastify-toast-width: 320px;
+    --toastify-toast-background: #fff;
+    --toastify-toast-min-height: 64px;
+    --toastify-toast-max-height: 800px;
+    --toastify-font-family: sans-serif;
+    --toastify-z-index: 50;
+  
+    --toastify-text-color-light: #757575;
+    --toastify-text-color-dark: #fff;
+  
+    /* //Used only for colored theme */
+    --toastify-text-color-info: #fff;
+    --toastify-text-color-success: #fff;
+    --toastify-text-color-warning: #fff;
+    --toastify-text-color-error: #fff;
+  
+    --toastify-spinner-color: #616161;
+    --toastify-spinner-color-empty-area: #e0e0e0;
+  
+    /* // Used when no type is provided
+    // toast("**hello**") */
+    --toastify-color-progress-light: linear-gradient(
+      to right,
+      #4cd964,
+      #5ac8fa,
+      #007aff,
+      #34aadc,
+      #5856d6,
+      #ff2d55
+    );
+    /* // Used when no type is provided */
+    --toastify-color-progress-dark: #bb86fc;
+    --toastify-color-progress-info: var(--toastify-color-info);
+    --toastify-color-progress-success: var(--toastify-color-success);
+    --toastify-color-progress-warning: var(--toastify-color-warning);
+    --toastify-color-progress-error: var(--toastify-color-error);
+}
+
+[data-theme='dark-blue'] {
+    /* #########Theme Site Demon######## */    
+    --theme-red1: #0cb6fd;
+    --theme-red1-rgb: 255, 52, 63;
+    --theme-red2: #1081e8;
+    --theme-red3: #800015;
+    --theme-green1: #C1CDAD;
+    --theme-green2: #D1B857;
+    --theme-green3: #9BD1CC;
+    --theme-blue1: #6FAAFF;
+
+    --theme-combine1: #1081e8;
+    --theme-combine2: #F32177;
+
+    --theme-black1: #212428;
+    --theme-black1-rgb: 33, 36, 40;
+    --theme-black2: #212529;
+    --theme-white1: #FFFBF2;
+    --theme-white2: #DFE2DB;
+    --theme-brown1: #56423E;
+    --theme-brown2: #3C3A44;
+}
+
+[data-theme='white-red'] {
+    /* #########Theme Site Demon######## */    
+    --theme-red1: #FF963C;
+    --theme-red1-rgb: 255, 52, 63;
+    --theme-red2: #A017D7;
+    --theme-red3: #800015;
+    --theme-green1: #C1CDAD;
+    --theme-green2: #D1B857;
+    --theme-green3: #9BD1CC;
+    --theme-blue1: #6FAAFF;
+
+    --theme-combine1: #A017D7;
+    --theme-combine2: #FF963C;
+
+    --theme-white1: #212428;
+    --theme-white2: #212529;
+    --theme-black1: #FFFBF2;
+    --theme-black2: #DFE2DB;
+    --theme-brown1: #56423E;
+    --theme-brown2: #3C3A44;
+}
+
+[data-theme='white-blue'] {
+    /* #########Theme Site Demon######## */    
+    --theme-red1: #0cb6fd;
+    --theme-red1-rgb: 255, 52, 63;
+    --theme-red2: #CC3743;
+    --theme-red3: #800015;
+    --theme-green1: #C1CDAD;
+    --theme-green2: #D1B857;
+    --theme-green3: #9BD1CC;
+    --theme-blue1: #6FAAFF;
+
+    --theme-combine1: #1081e8;
+    --theme-combine2: #F32177;
+
+    --theme-white1: #212428;
+    --theme-white2: #212529;
+    --theme-black1: #FFFBF2;
+    --theme-black2: #DFE2DB;
+    --theme-brown1: #56423E;
+    --theme-brown2: #3C3A44;
+}
+
+
+.Toastify__toast-body {
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+.Toastify__toast-theme--dark {
+    background: var(--theme-red1) !important;
+    color: #FFFBF2 !important;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.navbar{
+    position: relative;
+    min-height: 64px;
+    width: 100%;
+    background-color: var(--theme-black1);
+}
+.navbar .navbar-brand{
+    text-decoration: none;
+    color: var(--theme-red1);
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.navbar .navbar-brand::after{
+    content: "PRIDE DEMONS";
+}
+.navbar .button-navbar{
+    position: absolute;
+    display: flex;
+    right: 65px;
+    top: 15px;
+}
+.navbar .button-navbar button,
+.navbar .lets-mints{
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-color: var(--theme-red1);
+    border: none;
+    color: #FFFBF2;
+    transition: .3s;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar .button-navbar button.connect-wallet {
+    margin: 0 8px;
+}
+.navbar .button-navbar button:hover,
+.navbar .lets-mints:hover {
+    background-color: var(--theme-red2);
+}
+.navbar .navbar-toggler{
+    padding: 0;
+}
+
+.navbar-toggler-icon{
+    height: max-content !important;
+    color: var(--theme-red1) !important;
+    margin: auto;
+    font-size: 2rem;
+    padding: 0;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.nav-link{
+    text-decoration: none;
+    position: relative;
+    color: var(--theme-white2) !important;
+    letter-spacing: 2.5px;
+    padding: 0 10px;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: var(--theme-red1);
+    height: 0.25rem;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: var(--theme-white1) !important;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.navbar .change-theme{
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--theme-white1);
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: transparent;
+    text-transform: uppercase;
+    padding: 5px 18px;
+    transition: all .2s ease;
+}
+.navbar .change-theme i{
+    background: linear-gradient(45deg, var(--theme-combine2), var(--theme-red1), var(--theme-combine1));
+    background-clip: text;
+    -webkit-text-stroke: 1px transparent;
+}
+.navbar .change-theme:hover{
+    background: var(--theme-white2);
+    background-clip: none;
+}
+
+button.lets-mints{
+    border: 3px solid var(--theme-red2);
+    border-radius: 5px;
+    background-color: var(--theme-red1);
+    color: var(--theme-white1);
+    transition: .3s;
+    padding: 5px 10px;
+    margin: 5px;
+    letter-spacing: 5px;
+}
+button.lets-mints:hover{
+    background-color: var(--theme-green2);
+}
+
+Footer{
+    background-color: var(--theme-black1) !important;
+}
+Footer p{
+    color: var(--theme-white2);
+}
+
+.linear-progress > *{
+    background-color: var(--theme-red1) !important;
+}
+.linear-progress {
+    background-color: var(--theme-red3) !important;
+}
+
+.circular-progress *{
+    background-color: var(--theme-red1);
+}
+.circular-progress {
+    background-color: var(--theme-red3);
+}
+
+.loading-screen {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--theme-black1);
+    z-index: 50;
+}
+.loading-mints {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#particlesEffect {
+    position: absolute;
+    z-index: 10;
+}
+
+
+/* ScrollBar */
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--theme-black1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--theme-red1);
+    border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-red2);
+}
+
+/* #############Home############### */
+@import url(home.css);
+
+/* #############Mints############### */
+@import url(mints.css);
+
+/* #############Not Found############### */
+@import url(notfound.css);
+
+/* #############Road Map############### */
+@import url(roadmap.css);
+
+/* #############All Modal############### */
+@import url(modal.css);
+
+/* #############TEAM############### */
+@import url(team.css);
+
+/* #############CONTRACT############### */
+@import url(contract.css);
+
+
+
+/* Responsive */
+@media screen and (max-width: 385px) {
+    .navbar .navbar-brand::after{
+        content: "PD";
+    }
+}

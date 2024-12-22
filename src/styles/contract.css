@@ -1,0 +1,47 @@
+.container-contract {
+    padding: 60px 0 0;
+    height: 100%;
+    max-width: 100%;
+}
+
+.container-contract .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 0 75px;
+}
+
+.container-contract .wrapper .grid-column{
+    border-top: 1px solid rgba(0, 0, 0, .35);
+    background: var(--theme-black1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .35);
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all .3s ease;
+}
+.container-contract .wrapper .grid-column:hover{
+    border-top: 1px solid var(--theme-red1);
+    box-shadow: 0 5px 10px var(--theme-red1);
+}
+
+.container-contract .wrapper .grid-column a{
+    letter-spacing: 2px;
+    text-align: center;
+    transition: transform .3s ease-in-out;
+    font-weight: 500;
+}
+.container-contract .wrapper .grid-column img{
+    max-height: 96px;
+    transition: transform .3s ease-in-out;
+}
+
+.container-contract .wrapper .grid-column a:hover,
+.container-contract .wrapper .grid-column img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,1 @@
+cd "/mnt/MbixTech/nfts-frontend/client" && npm run dev

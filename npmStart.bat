@@ -1,0 +1,1 @@
+start /d "C:\MbixTech\nfts-frontend\client" npm run dev

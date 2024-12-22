@@ -1,0 +1,113 @@
+.container-team{
+    padding: 100px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-team .title{
+    position: relative;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    margin: 50px auto 75px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.container-team .title img{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-team .title h2{
+    position: static;
+    text-align: center;
+    color: #FFFBF2;
+    font-size: 42px;
+    align-items: center;
+    font-weight: 800;
+    margin: 0;
+}
+.container-team .title h3 {
+    font-size: 28px;
+    text-align: center;
+    color: #FFFBF2;
+}
+.container-team .title h4 {
+    font-size: 24px;
+    text-align: center;
+    color: #FFFBF2;
+}
+
+.container-team .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: center;
+    grid-gap: 50px;
+    align-items: center;
+    margin: 50px;
+}
+
+.container-team .wrapper .card-team{
+    position: relative;
+    z-index: 15;
+    height: 100%;
+    background-color: var(--theme-black2);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .35);
+    transition: .2s;
+}
+.container-team .wrapper .card-team:hover{
+    box-shadow: 0 5px 10px var(--theme-red1);
+}
+
+.container-team .wrapper .card-team img{
+    max-height: 400px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    transition: all .3s ease; 
+}
+.container-team .wrapper .card-team img:hover{
+    filter: opacity(90%);
+}
+
+.container-team .wrapper .card-team .content{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 15px;
+}
+.container-team .wrapper .card-team .content h4{
+    background: var(--theme-red1);
+    font-weight: 600;
+    font-size: 24px;
+    padding: .5rem 1rem;
+    border-radius: 30px;
+    color: #FFFBF2;
+    margin: 0 0 16px;
+    text-align: center;
+}
+.container-team .wrapper .card-team .content h6{
+    color: var(--theme-white2);
+    padding: 0 .5rem;
+    min-height: 78px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container-team .wrapper .card-team .content .icon-social{
+    margin: 8px 0 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    justify-content: flex-end;
+}
+.container-team .wrapper .card-team .content .icon-social a{
+    margin: auto 0;
+}
+
+.container-team .wrapper .card-team .icon-social img{
+    max-height: 36px;
+    width: 32px;
+    object-fit: contain;
+}

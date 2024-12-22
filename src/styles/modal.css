@@ -1,0 +1,225 @@
+.modal{
+    color: var(--theme-white2) !important;
+}
+.modal .modal-header,
+.modal .modal-footer{
+    border: none;
+}
+.modal button.btn-close{
+    background: url(
+        "../images/close-red.svg"
+    ) no-repeat ;
+    transform: scale(1.5);
+    margin-right: .5em;
+    opacity: 1;
+}
+
+.modal-dialog .modal-content,
+.modal-dialog .modal-content,
+.modal-dialog .modal-content{
+    background: var(--theme-black1);
+}
+
+
+/* Connect Modal */
+#connectModal .modal-body .metamask,
+#connectModal .modal-body .walletconnect{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    background-color: var(--theme-black2);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .35);
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+#connectModal h5.modal-title{
+    color: var(--theme-white2);
+    letter-spacing: .5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#connectModal .modal-body .metamask img,
+#connectModal .modal-body .walletconnect img{
+    max-height: 32px;
+}
+#connectModal .modal-body .metamask h5,
+#connectModal .modal-body .walletconnect h5{
+    color: var(--theme-white2);
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+
+
+/* Account Modal */
+#accountModal .modal-body {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border-top: 1px solid rgba(0, 0, 0, .25);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .35);
+    margin: 20px;
+    gap: 15px;
+}
+
+#accountModal h5.modal-title{
+    color: var(--theme-white2);
+    letter-spacing: .5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#accountModal .modal-body .network {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#accountModal .modal-body .network h6{
+    color: var(--theme-white2);
+}
+#accountModal .modal-body .network button {
+    border-radius: 30px;
+    padding: 0 10px;
+    outline: none;
+    background: none;
+    border: 2px solid var(--theme-red1);;
+}
+
+#accountModal .modal-body .address {
+    display: flex;
+    gap: 10px;
+}
+#accountModal .modal-body .address h5{
+    color: var(--theme-white2);
+}
+
+#accountModal .modal-body .group-span{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+#accountModal .modal-body .group-span span{
+    cursor: pointer
+}
+
+#accountModal .modal-body button.signout {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: var(--theme-red1);
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+#accountModal .modal-footer h5{
+    font-size: 18px;
+    color: var(--theme-white2);
+}
+
+
+/* Theme Modal */
+#themeModal h5.modal-title{
+    color: var(--theme-white2);
+    letter-spacing: .5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+#themeModal .modal-body .group-color{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#themeModal .modal-body .group-color .group-select{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+}
+#themeModal .modal-body .group-color .group-select input{
+    transform: scale(1.5);
+    outline: none;
+    border: 2px solid var(--theme-red1);
+    color: var(--theme-red1);
+    transition: all .2s ease;
+}
+#themeModal .modal-body .group-color .group-select input:hover{
+    transform: scale(2);
+}
+
+#themeModal .modal-body .group-color .group-select .default{
+    padding: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #212428 50%, #FF343F 50%);
+    border: 2px solid #FFFBF2;
+    margin-right: 15px;
+}
+#themeModal .modal-body .group-color .group-select .dark-blue{
+    padding: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #212428 50%, #0cb6fd 50%);
+    border: 2px solid #FFFBF2;
+    margin-right: 15px;
+}
+#themeModal .modal-body .group-color .group-select .white-red{
+    padding: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FFFBF2 50%, #FF343F 50%);
+    border: 2px solid #FFFBF2;
+    margin-right: 15px;
+}
+#themeModal .modal-body .group-color .group-select .white-blue{
+    padding: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FFFBF2 50%, #0cb6fd 50%);
+    border: 2px solid #FFFBF2;
+    margin-right: 15px;
+}
+
+#themeModal .modal-footer button{
+    border: none;
+    outline: none;
+    color: #FFFBF2;
+    background: var(--theme-red1);
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+
+/* Modal Queueing */
+#queueModal h5.modal-title{
+    color: var(--theme-white2);
+    letter-spacing: .5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#queueModal .modal-content {
+    background: #FFF;
+}
+
+#queueModal .modal-body .requeuing h6 {
+    font-weight: 600;
+}
+#queueModal .modal-body .requeuing p {
+    margin: 0;
+    color: var(--theme-black2);
+}
+
+#queueModal .modal-footer button {
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+    font-weight: 700;
+    background: var(--theme-red1);
+    color: #FFFBF2;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

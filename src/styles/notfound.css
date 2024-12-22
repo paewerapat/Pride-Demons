@@ -1,0 +1,28 @@
+.notfound-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--theme-black1);
+    min-height: 100vh;
+}
+.notfound-page .text-show h1{
+    color: var(--theme-red1) !important;
+    font-size: 5.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 0;
+}
+.notfound-page .text-show h2{
+    font-size: 3rem;
+}
+.notfound-page .text-show hr{
+    height: 5px;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.notfound-page .text-show h1,
+.notfound-page .text-show h2,
+.notfound-page .text-show h5{
+    color: #FFF;
+}
